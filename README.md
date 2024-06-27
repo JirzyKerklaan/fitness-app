@@ -12,7 +12,6 @@
     </li>
     <ul>
         <li><a href="#pages">Pagina's bepalen</a></li>
-        <li><a href="#design">Design uitwerken in Figma</a></li>
     </ul>
     <li>
         <a href="#flowchart">Flowchart met functionaliteiten per view</a>
