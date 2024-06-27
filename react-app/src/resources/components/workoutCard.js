@@ -1,5 +1,5 @@
 const WorkoutCard = (props) => {
-    const {title, estimated_time} = props.workout.attributes;
+    const {title, estimated_time, difficulty, intensity} = props.workout.attributes;
 
     const convertTimeToMinutes = (timeString) => {
         const [hours, minutes] = timeString.split(':');
@@ -17,12 +17,12 @@ const WorkoutCard = (props) => {
     return (
         <div className="workout-card">
             <div className="left">
-                <div className="label">{ title }</div>
+                <div className="label">{ difficulty }</div>
                 <div className="name">{ title }</div>
                 <div className="time-estimate">{ duration }</div>
             </div>
             <div className="right">
-                <div className="intensity">{ title }</div>
+                <div className="intensity">{ intensity }</div>
             </div>
         </div>
     )

@@ -378,10 +378,10 @@ export interface ApiWorkoutWorkout extends Schema.CollectionType {
     description: Attribute.Text & Attribute.Required;
     estimated_time: Attribute.Time;
     difficulty: Attribute.Enumeration<
-      ['beginner', 'intermediate', 'advanced', 'professional']
+      ['Beginner', 'Intermediate', 'Advanced', 'Professional']
     > &
       Attribute.Required &
-      Attribute.DefaultTo<'beginner'>;
+      Attribute.DefaultTo<'Beginner'>;
     intensity: Attribute.Integer &
       Attribute.Required &
       Attribute.SetMinMax<

@@ -26,13 +26,13 @@
     "difficulty": {
       "type": "enumeration",
       "enum": [
-        "beginner",
-        "intermediate",
-        "advanced",
-        "professional"
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Professional"
       ],
       "required": true,
-      "default": "beginner"
+      "default": "Beginner"
     },
     "intensity": {
       "type": "integer",

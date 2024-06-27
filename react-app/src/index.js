@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './css/index.css';
 import Home from "./resources/pages/Home";
 import NoPage from "./resources/pages/NoPage";
 
