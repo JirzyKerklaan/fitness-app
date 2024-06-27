@@ -368,6 +368,7 @@ export interface ApiWorkoutWorkout extends Schema.CollectionType {
     singularName: 'workout';
     pluralName: 'workouts';
     displayName: 'Workouts';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -376,6 +377,21 @@ export interface ApiWorkoutWorkout extends Schema.CollectionType {
     title: Attribute.String & Attribute.Required;
     description: Attribute.Text & Attribute.Required;
     estimated_time: Attribute.Time;
+    difficulty: Attribute.Enumeration<
+      ['beginner', 'intermediate', 'advanced', 'professional']
+    > &
+      Attribute.Required &
+      Attribute.DefaultTo<'beginner'>;
+    intensity: Attribute.Integer &
+      Attribute.Required &
+      Attribute.SetMinMax<
+        {
+          min: 1;
+          max: 5;
+        },
+        number
+      > &
+      Attribute.DefaultTo<3>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

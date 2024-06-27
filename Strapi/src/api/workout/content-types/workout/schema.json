@@ -4,7 +4,8 @@
   "info": {
     "singularName": "workout",
     "pluralName": "workouts",
-    "displayName": "Workouts"
+    "displayName": "Workouts",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,6 +22,24 @@
     },
     "estimated_time": {
       "type": "time"
+    },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "professional"
+      ],
+      "required": true,
+      "default": "beginner"
+    },
+    "intensity": {
+      "type": "integer",
+      "max": 5,
+      "min": 1,
+      "default": 3,
+      "required": true
     }
   }
 }
