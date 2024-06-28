@@ -1,0 +1,43 @@
+.recent-activity-slider {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 0px 25px 5px;
+    overflow-x: scroll;
+    flex-basis: 150px;
+}
+
+.recent-activity-card {
+    min-width: calc(150px - 30px);
+    height: calc(225px - 30px);
+    background-color: #D7E8E9;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.recent-activity-card .type {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.recent-activity-card .image {
+    width: 100%;
+    flex-grow: 2;
+}
+
+.recent-activity-card .name, .time_estimate, .intensity {
+    width: fit-content;
+}
+
+.recent-activity-card .name h3, p {
+    margin: 0;
+}

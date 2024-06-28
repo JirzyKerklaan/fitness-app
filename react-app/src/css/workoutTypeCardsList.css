@@ -1,0 +1,53 @@
+.workout-type-cards-list {
+    display: grid;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    gap: 12px;
+    grid-template-columns: calc(50% - 6px) calc(50% - 6px);
+}
+
+.workout-type-cards-list .workout-type-card {
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    width: auto;
+    height: auto;
+}
+
+.workout-type-card .text {
+
+}
+
+.workout-type-card .text h3{
+
+}
+
+.workout-type-card .text p{
+
+}
+
+.workout-type-cards-list .workout-type-card-Strength {
+    background-color: #D7E8E9;
+}
+
+.workout-type-cards-list .workout-type-card-Cardio {
+    background-color: #DAF0E5;
+}
+
+.workout-type-cards-list .workout-type-card-Yoga {
+    background-color: #E5F6E1;
+}
+
+.workout-type-cards-list .workout-type-card-Interval {
+    background-color: #F7F3E5;
+}
+
+.workout-type-cards-list .workout-type-card-Running {
+    background-color: #F2ECE4;
+}
+
+.workout-type-cards-list .workout-type-card-Balance {
+    background-color: #F5DEC7;
+}
